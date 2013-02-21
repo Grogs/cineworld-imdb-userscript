@@ -1,11 +1,13 @@
 // ==UserScript==
-// @name           Add IMDb ratings to Cienworld pages
+// @name           Add IMDb ratings to Cineworld pages
 // @namespace      gregd.me
 // @grant          GM_xmlhttpRequest
 // @description    Adds ratings from IMDB to films in iPlayer
 // @include        http://www.cineworld.co.uk/mobile/cinemas/*/nowshowing
 // @require        http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
-// @version        1.0
+// @version        1.0.1
+// @updateURL      https://raw.github.com/Grogs/cineworld-imdb-userscript/master/cineworld-imdb-ratings.js
+// @downloadURL    https://raw.github.com/Grogs/cineworld-imdb-userscript/master/cineworld-imdb-ratings.js
 //
 // ==/UserScript==
 
@@ -24,7 +26,7 @@ $('.panel h2').each(function(i){
     currentTitle = $(this).find('a').text();
     
     if (currentTitle.search("2D") == 0 || currentTitle.search("3D") == 0)
-      currentTitle=currentTitle.substring(5)
+    	currentTitle=currentTitle.substring(5)
         
     //console.log(currentTitle);
     
