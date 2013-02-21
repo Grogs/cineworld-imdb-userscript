@@ -5,6 +5,7 @@
 // @description    Adds ratings from IMDB to films in iPlayer
 // @include        http://www.cineworld.co.uk/mobile/cinemas/*/nowshowing
 // @require        http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
+// @version        1.0
 //
 // ==/UserScript==
 
